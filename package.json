@@ -2,12 +2,12 @@
   "name": "clase26_desafio",
   "version": "1.0.0",
   "description": "",
-  "main": "b0.server.js",
+  "main": "server.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "start": "node b0.server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",

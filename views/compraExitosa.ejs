@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon_computer_now_32x32.png">
-    <link rel="stylesheet" href="./css/estiloIndex.css">
-    <title>Index</title>
+    <link rel="stylesheet" href="./css/estiloHome.css">
+    <title>Compra Exitosa</title>
 </head>
 <body>
+    
     <div class="gridContainer">
         <!--1.Elementos de cabecera a la altura del Logo-->
-         <div class="Logo">
-             <a href="../index.html">
-                 <img src="./img/logo_electro_te.png" alt="Logo"> 
-             </a>
-         </div>
-         <!--2.Menú de módulos--> 
-         <div class="Header_nav"> 
-             <ul class="mainNav">
-                 <li><a href="/chatGeneral">Chat</a></li>
-                 <li><a href="/productosClientes">Comprar</a></li>
-                 <li><a href="/productosMantenimiento">Mantenimiento</a></li>
-             </ul>
-         </div>
+        <div class="Logo">
+            <div class="flexContainerLogo">
+               <div class="flexItemLogoMain">
+                   <a href="../index.html">
+                       <img src="./img/logo_electro_te.png" alt="Logo"> 
+                   </a>
+               </div>
+                <div class="flexItemBtnLogout">
+                   <button class="btnLogout" onclick='window.location.href = "/logout"' type="button">Logout</button>
+               </div>
+            </div>
+            <!--2.Menú de módulos--> 
+            <div class="Header_nav"> 
+                <ul class="mainNav">
+                    <li><a href="/chatGeneral">Chat</a></li>
+                    <li><a href="/productosClientes">Comprar</a></li>
+                    <li><a href="/homeAdmin">Mantenimiento</a></li>
+                </ul>
+            </div>
+        </div>
          <!--3.Sección1.Título y subtítulo general-->
          <div class="Section1">	
-             <h2 class=tituloGeneral>Coderhouse: Clase 38. Tercera entrega del proyecto final</h2>
+             
              
              <div>
                  
@@ -35,39 +43,34 @@
          </div>
          <!--4.Sección2: Objetivos-->
          <div class="Section2">	
-            <div class="parallax">
-                <h4>Bienvenido a nuestra empresa</h4>
-                <button class="btnLogin" onclick='window.location.href = "/login"' type="button">Login</button>
-                <button class="btnHome" onclick='window.location.href = "/homeGeneral"' type="button">Home</button>
-                <button class="btnLogout" onclick='window.location.href = "/signup"' type="button">Signup</button>
-                
-                <!-- <input type="file" id="input1">
-                <button id="upload">Upload</button>
-                <div id="imgShow"></div>
-
-                <input type="file" id="input2">
-                <button id="myBtn">Try it</button>
-                <pre id="textShow"></pre>  () => location.reload() onsubmit="setTimeout(GoBackWithRefresh(), 4000);return false;"-->
-                
-                <!-- <form action="/api/uploadFile" enctype="multipart/form-data" method="POST" >
-                    <input type="file" class="admin__input" id="myFile" name="myFile" />
-                    <input class="admin__submit" type="submit" />
-                  </form> -->
-
-            <!-- <div id="imgShow"><span>hola</span></div>
-                
-            </div> -->
-
-            <!-- <div id="imgPreview"></div>
-                
-            </div> -->
+            
             
          </div>
          <!--5.Sección3: DataFlow FrontEnd-->
          <div class="Section3">	
-             <div>
-                 
-             </div>
+            <div class="sector">
+                <br>
+                <h2 class="login">Gracias por su compra <span class="username"><%=username%></span> </h2>
+                <!-- <h4 class="login">Eliga el servicio que usará</h4> -->
+                <div class="flexContainerVirtualForm">
+                    <div class="flexItemChatVirtualForm">
+                        <h4 class="username">Su compra ha sido exitosa </h4>
+                    </div>
+                   <br> <br>
+                    <div class="flexItemProductosVirtualForm">
+                        <label>Le estará llegando un mensaje de texto con la confirmación </label>
+                    </div>
+                    <div class="flexItemProductosVirtualForm">
+                        <label> </label>
+                    </div>
+                    <br><br>
+                    
+                    <br><br>
+                </div>
+                <br>
+                
+                
+            </div>
          </div>
          <!--6.Sección4: DataFlow BackEnd-->
          <div class="Section4">	
@@ -108,5 +111,5 @@
  
      </div>
 </body>
-<script type="text/javascript" src="../js/index.js"></script>
+<!-- <script type="text/javascript" src="../js/JSindex.js"></script> -->
 </html>
